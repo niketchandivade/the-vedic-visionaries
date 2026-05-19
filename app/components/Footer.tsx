@@ -21,9 +21,9 @@ const contactItems = [
   {
     icon: <Mail className="w-7 h-7 text-brand-gold" />,
     title: 'Email Us',
-    value: 'vedicvisionaries@gmail.com',
+    value: 'vedicvisionaries02@gmail.com',
     description: 'Share your concerns & receive personalized guidance.',
-    link: 'mailto:vedicvisionaries@gmail.com',
+    link: 'mailto:vedicvisionaries02@gmail.com',
   },
   {
     icon: <Smartphone className="w-7 h-7 text-brand-gold" />,

@@ -49,9 +49,10 @@ export default function AboutUs() {
 
               {/* Description */}
               <p className="text-lg md:text-xl text-brand-green/70 leading-relaxed mb-10 max-w-3xl">
-                Blending authentic Vedic wisdom with practical modern guidance
-                to help individuals gain clarity, confidence, positivity, and
-                spiritual balance in everyday life.
+                At Vedic Visionaries, we combine the timeless wisdom of Vedic Astrology, Vastu Shastra, and Numerology with practical modern insights. 
+              <br />
+              <br />
+                With over 10 years of experience and clients across India, the UK, and the UAE, we provide personalized guidance to help individuals and families achieve clarity, harmony, prosperity, and spiritual balance
               </p>
 
               {/* Highlights */}
@@ -64,7 +65,7 @@ export default function AboutUs() {
 
                   <div>
                     <h3 className="font-serif text-xl font-bold text-brand-green">
-                      Certified Astrologer
+                      Certified Vedic Astrologer
                     </h3>
                   </div>
                 </div>
@@ -77,10 +78,30 @@ export default function AboutUs() {
 
                   <div>
                     <h3 className="font-serif text-xl font-bold text-brand-green">
-                      10+ Years Experience
+                      Vastu Shastra Consultant
                     </h3>
                   </div>
                 </div>
+
+                <div className="group flex items-center gap-4 bg-white/80 backdrop-blur-sm border border-brand-gold/10 rounded-2xl px-6 py-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div className="w-14 h-14 rounded-2xl bg-brand-yellow/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/10 transition-all duration-300">
+                    <Sparkles className="w-6 h-6 text-brand-gold" />
+                  </div>
+
+                  <div>
+                    <h3 className="font-serif text-xl font-bold text-brand-green">
+                      Professional Numerologist
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-10 inline-flex items-center gap-3 px-5 py-4 rounded-2xl bg-brand-gold text-brand-white shadow-lg">
+                <Stars className="w-5 h-5" />
+
+                <span className="font-medium tracking-wide">
+                  10+ Years of Experience
+                </span>
               </div>
 
               {/* Bottom Tagline */}
@@ -110,54 +131,9 @@ export default function AboutUs() {
                 <span className="text-brand-gold">Vedic Wisdom</span>
               </h2>
 
-              {/* Highlights */}
-              <div className="flex justify-center flex-wrap gap-4 mb-10">
-                {/* Certified */}
-                <div className="group flex items-center gap-4 bg-white/80 backdrop-blur-sm border border-brand-gold/10 rounded-2xl px-6 py-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="w-14 h-14 rounded-2xl bg-brand-yellow/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/10 transition-all duration-300">
-                    <Award className="w-6 h-6 text-brand-gold" />
-                  </div>
-
-                  <div>
-                    <h3 className="font-serif text-lg font-bold text-brand-green">
-                      Certified Astrologer
-                    </h3>
-                  </div>
-                </div>
-
-                {/* Experience */}
-                <div className="group flex items-center gap-4 bg-white/80 backdrop-blur-sm border border-brand-gold/10 rounded-2xl px-6 py-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="w-14 h-14 rounded-2xl bg-brand-yellow/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/10 transition-all duration-300">
-                    <Sparkles className="w-6 h-6 text-brand-gold" />
-                  </div>
-
-                  <div>
-                    <h3 className="font-serif text-lg font-bold text-brand-green">
-                      10+ Years Experience
-                    </h3>
-                  </div>
-                </div>
-              </div>
-
-              {/* Intro */}
-              <p className="text-lg md:text-xl text-brand-green/70 leading-relaxed mb-8">
-                The Vedic Visionaries is a trusted name in modern Vedic
-                astrology, known for providing clear, practical, and deeply
-                insightful guidance. With over 10+ years of professional
-                experience, he has helped thousands of individuals navigate
-                life’s challenges with confidence and peace.
-              </p>
-
-              <p className="text-lg md:text-xl text-brand-green/70 leading-relaxed mb-10">
-                our approach blends the ancient wisdom of Vedic astrology with
-                modern interpretation, offering guidance that is spiritual yet
-                practical, intuitive yet logical — helping people understand
-                their destiny with clarity.
-              </p>
-
               {/* Journey Card */}
               <div className="bg-white/70 backdrop-blur-sm border border-brand-gold/10 rounded-3xl p-8 shadow-sm mb-8">
-                <div className="flex items-center gap-3 mb-5">
+                {/* <div className="flex items-center gap-3 mb-5">
                   <div className="w-12 h-12 rounded-2xl bg-brand-yellow/10 border border-brand-gold/20 flex items-center justify-center">
                     <Orbit className="w-6 h-6 text-brand-gold" />
                   </div>
@@ -165,20 +141,17 @@ export default function AboutUs() {
                   <h3 className="font-serif text-2xl font-bold text-brand-green">
                     A Journey Rooted in Purpose
                   </h3>
-                </div>
+                </div> */}
 
                 <p className="text-brand-green/70 leading-relaxed text-lg">
-                  Since childhood, The Vedic Visionaries felt a strong connection with cosmic
-                  energies, planetary movements, and spiritual sciences. What
-                  began as curiosity evolved into a deep passion, leading him to
-                  pursue astrology professionally.
+                  At Vedic Visionaries, is to guide individuals and families toward clarity, harmony, and fulfillment through the timeless wisdom of Astrology, Vastu Shastra, and Numerology. We believe every journey has a purpose, and through personalized guidance, practical remedies, and authentic Vedic knowledge, we help our clients make informed decisions and create a balanced, prosperous life.
                 </p>
 
-                <p className="text-brand-green/70 leading-relaxed text-lg mt-5">
+                {/* <p className="text-brand-green/70 leading-relaxed text-lg mt-5">
                   Today, The Vedic Visionaries stands as a certified astrologer, delivering
                   accurate readings and meaningful solutions across India and
                   abroad.
-                </p>
+                </p> */}
               </div>
 
               {/* Mission Card */}
@@ -197,8 +170,7 @@ export default function AboutUs() {
                   </div>
 
                   <p className="text-lg md:text-xl italic leading-relaxed text-brand-white/90">
-                    “To help people find clarity, alignment, and peace through
-                    honest, compassionate, and reliable astrology.”
+                    “To help people unlock their true potential through the wisdom of Astrology, Vastu Shastra, and Numerology, offering personalized guidance that brings clarity, confidence, harmony, and prosperity to life&apos;s journey.”
                   </p>
                 </div>
               </div>
@@ -209,7 +181,7 @@ export default function AboutUs() {
                   className="
               inline-flex items-center gap-3
               bg-brand-gold hover:bg-brand-yellow
-              text-brand-green
+              text-brand-white
               px-8 py-4 rounded-2xl
               font-semibold tracking-wide
               transition-all duration-300

@@ -261,12 +261,6 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Bottom Quote */}
-          <div className="text-center">
-            <p className="text-xl md:text-2xl font-serif italic text-brand-gold">
-              Trusted Spiritual Guidance Beyond Borders
-            </p>
-          </div>
         </div>
       </section>
 
@@ -282,8 +276,9 @@ export default function HomePage() {
           <div className="text-center mb-20">
 
             <h2 className="font-serif text-4xl md:text-6xl font-bold text-brand-green leading-tight">
-              Trusted{" "}
-              <span className="text-brand-gold">Spiritual Guidance</span>
+              Why Clients Choose {" "}
+              <br/>
+              <span className="text-brand-gold">The Vedic Visionaries</span>
             </h2>
 
             <div className="w-24 h-[2px] bg-brand-gold/70 mx-auto rounded-full mt-6 mb-8" />

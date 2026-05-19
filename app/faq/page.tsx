@@ -38,7 +38,7 @@ export default function Faq() {
       a: "Improper energy balance may affect peace, health, finances, and relationships. Vastu aims to improve harmony and positivity.",
     },
     {
-      q: "Booking & Payment FAQsHow long does a consultation take?",
+      q: "How long does a consultation take?",
       a: "Depending on the service: Astrology: 45–90 mins, Numerology: 30–60 mins, Vastu Consultation: 1–3 hours",
     },
     {
