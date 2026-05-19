@@ -24,6 +24,21 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
+  const countries = [
+    {
+      flag: "/in.svg",
+      country: "India",
+    },
+    {
+      flag: "/uk.svg",
+      country: "United Kingdom",
+    },
+    {
+      flag: "ae.svg",
+      country: "United Arab Emirates",
+    },
+  ];
+
   return (
     <div className="animate-fade-in">
       {/* Hero */}
@@ -34,8 +49,8 @@ export default function HomePage() {
             src="/VVbackground.svg"
             alt="Vedic Background"
             className="w-full h-full object-cover opacity-[0.15]"
-            width={'100'}
-            height={'100'}
+            width={"100"}
+            height={"100"}
           />
           <div className="absolute inset-0 bg-gradient-to-br " />
         </div>
@@ -110,7 +125,6 @@ export default function HomePage() {
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-brand-green/10 rounded-full blur-3xl opacity-40" />
 
         <div className="max-w-5xl mx-auto px-4 md:px-6 relative z-10 text-center">
-
           {/* Heading */}
           <h2 className="font-serif text-4xl md:text-6xl leading-tight tracking-tight text-brand-green">
             Welcome To{" "}
@@ -122,7 +136,6 @@ export default function HomePage() {
 
           {/* Content Card */}
           <div className="relative bg-white/80 backdrop-blur-sm border border-brand-gold/10 rounded-3xl p-8 md:p-12 shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
-
             <p className="text-lg md:text-xl leading-relaxed text-brand-green/80 max-w-3xl mx-auto">
               The Vedic Visionaries is dedicated to providing authentic
               spiritual consultations and personalized guidance through
@@ -142,7 +155,6 @@ export default function HomePage() {
 
       {/* Experience Section */}
       <section className="relative py-24 overflow-hidden bg-gradient-to-b from-brand-beige/60 via-white to-brand-beige/40">
-        
         {/* Decorative Blur */}
         <div className="absolute top-10 right-10 w-72 h-72 bg-brand-yellow/10 rounded-full blur-3xl opacity-50" />
         <div className="absolute bottom-10 left-10 w-72 h-72 bg-brand-green/10 rounded-full blur-3xl opacity-40" />
@@ -150,7 +162,6 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-
             <h2 className="font-serif text-4xl md:text-6xl text-brand-green leading-tight">
               Our <span className="text-brand-gold">Experience</span>
             </h2>
@@ -212,7 +223,6 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10">
           {/* Header */}
           <div className="text-center max-w-4xl mx-auto mb-16">
-
             <h2 className="font-serif text-4xl md:text-6xl text-brand-green leading-tight">
               Trusted Guidance{" "}
               <span className="text-brand-gold">Across Borders</span>
@@ -229,44 +239,33 @@ export default function HomePage() {
 
           {/* Countries */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
-            {[
-              {
-                flag: "🇮🇳",
-                country: "India",
-              },
-              {
-                flag: "🇬🇧",
-                country: "United Kingdom",
-              },
-              {
-                flag: "🇦🇪",
-                country: "United Arab Emirates",
-              },
-            ].map((item) => (
+            {countries.map((item) => (
               <div
                 key={item.country}
-                className="group bg-white/80 backdrop-blur-sm border border-brand-gold/10 rounded-3xl p-8 text-center shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300"
+                className="group bg-white/80 backdrop-blur-sm border border-brand-gold/10 rounded-3xl p-6 lg:p-8 text-center shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300"
               >
-
-                
                 {/* Flag Circle */}
-                <div className="w-20 h-20 mx-auto rounded-full bg-brand-yellow/10 border border-brand-gold/20 flex items-center justify-center text-4xl mb-6 group-hover:bg-brand-gold/10 transition-all duration-300">
-                  {item.flag}
+                <div className="w-24 h-24 mx-auto flex items-center justify-center mb-6 overflow-hidden transition-all duration-300">
+                  <Image
+                    src={item.flag}
+                    alt={item.country}
+                    width={100}
+                    height={100}
+                    className="object-contain"
+                  />
                 </div>
 
-                <h3 className="font-serif text-2xl text-brand-green font-semibold group-hover:text-brand-gold transition-colors duration-300">
+                <h3 className="font-serif text-xl lg:text-2xl text-brand-green font-semibold group-hover:text-brand-gold transition-colors duration-300">
                   {item.country}
                 </h3>
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
       {/* Trust Section (Why Choose Us) */}
       <section className="relative py-24 overflow-hidden bg-gradient-to-b from-brand-beige/40 via-white to-brand-beige/20">
-        
         {/* Decorative Blur */}
         <div className="absolute top-10 left-10 w-72 h-72 bg-brand-yellow/10 rounded-full blur-3xl opacity-50" />
         <div className="absolute bottom-10 right-10 w-72 h-72 bg-brand-green/10 rounded-full blur-3xl opacity-40" />
@@ -274,10 +273,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           {/* Section Header */}
           <div className="text-center mb-20">
-
             <h2 className="font-serif text-4xl md:text-6xl font-bold text-brand-green leading-tight">
-              Why Clients Choose {" "}
-              <br/>
+              Why Clients Choose <br />
               <span className="text-brand-gold">The Vedic Visionaries</span>
             </h2>
 
@@ -362,7 +359,6 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           {/* Header */}
           <div className="text-center mb-20">
-
             <h2 className="font-serif text-4xl md:text-6xl font-bold text-brand-green leading-tight">
               Our <span className="text-brand-gold">Highlights</span>
             </h2>
@@ -400,9 +396,6 @@ export default function HomePage() {
                 key={index}
                 className="group bg-white/80 backdrop-blur-sm border border-brand-gold/10 rounded-3xl p-10 text-center shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300"
               >
-
-
-
                 {/* Stat */}
                 <div className="font-serif text-5xl md:text-6xl font-bold text-brand-gold mb-4 group-hover:scale-105 transition-transform duration-300">
                   {item.value}
@@ -423,7 +416,6 @@ export default function HomePage() {
 
       {/* Consultation Process */}
       <section className="relative py-24 overflow-hidden bg-gradient-to-b from-brand-beige/50 via-white to-brand-beige/20">
-        
         {/* Decorative Blur */}
         <div className="absolute top-10 left-10 w-72 h-72 bg-brand-yellow/10 rounded-full blur-3xl opacity-50" />
         <div className="absolute bottom-10 right-10 w-72 h-72 bg-brand-green/10 rounded-full blur-3xl opacity-40" />
@@ -431,7 +423,6 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           {/* Header */}
           <div className="text-center mb-20">
-
             <h2 className="font-serif text-4xl md:text-6xl font-bold text-brand-green leading-tight">
               Consultation <span className="text-brand-gold">Process</span>
             </h2>
@@ -512,7 +503,6 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           {/* Header */}
           <div className="text-center mb-20">
-
             <h2 className="font-serif text-4xl md:text-6xl font-bold text-brand-green leading-tight">
               Begin Your{" "}
               <span className="text-brand-gold">Spiritual Journey</span>
@@ -597,7 +587,6 @@ export default function HomePage() {
       </section>
 
       <section className="relative py-24 overflow-hidden bg-gradient-to-b from-white via-brand-beige/20 to-white">
-        
         {/* Decorative Blur */}
         <div className="absolute top-10 left-10 w-72 h-72 bg-brand-yellow/10 rounded-full blur-3xl opacity-50" />
         <div className="absolute bottom-10 right-10 w-72 h-72 bg-brand-green/10 rounded-full blur-3xl opacity-40" />
@@ -605,7 +594,6 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           {/* Header */}
           <div className="text-center mb-20">
-
             <h2 className="font-serif text-4xl md:text-6xl font-bold text-brand-green leading-tight">
               Required <span className="text-brand-gold">Details</span>
             </h2>
@@ -674,7 +662,6 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           {/* Header */}
           <div className="text-center mb-20">
-
             <h2 className="font-serif text-4xl md:text-6xl font-bold text-brand-green leading-tight">
               Choose Your <span className="text-brand-gold">Guidance</span>
             </h2>
@@ -862,7 +849,6 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           {/* Header */}
           <div className="text-center mb-20">
-
             <h2 className="font-serif text-4xl md:text-6xl font-bold text-brand-green leading-tight">
               Appointment &{" "}
               <span className="text-brand-gold">Payment Process</span>
@@ -961,9 +947,9 @@ export default function HomePage() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                <button className="w-full bg-brand-green hover:bg-brand-green/90 text-white py-4 rounded-2xl font-medium transition-all duration-300 shadow-sm hover:shadow-md">
-                  Contact For Booking
-                </button>
+                  <button className="w-full bg-brand-green hover:bg-brand-green/90 text-white py-4 rounded-2xl font-medium transition-all duration-300 shadow-sm hover:shadow-md">
+                    Contact For Booking
+                  </button>
                 </Link>
               </div>
             </div>
