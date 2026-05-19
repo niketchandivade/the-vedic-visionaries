@@ -145,7 +145,7 @@ export default function Footer() {
             className="
               inline-flex items-center gap-3
               bg-brand-gold hover:bg-brand-yellow
-              text-brand-green
+              text-brand-white
               px-8 py-4
               rounded-2xl
               font-semibold

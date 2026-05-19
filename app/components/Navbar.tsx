@@ -11,7 +11,7 @@ const navItems = [
   { label: "About", value: "about-us" },
   { label: "Services", value: "our-services" },
   { label: "Testimonials", value: "testimonials" },
-  { label: "FAQs", value: "faq" },
+  { label: "FAQ", value: "faq" },
 ];
 
 export default function Navbar() {
@@ -49,14 +49,12 @@ export default function Navbar() {
               </Link>
             ))}
 
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdEBcWD_ND-qBd0a9uTJZLJaeV3STIGjP6PpJmBAH3MZbIAzA/viewform"
+            <Link
+              href="/contact-us"
               className="inline-flex items-center justify-center gap-2 w-full bg-brand-green hover:bg-brand-green/90 text-white font-medium py-2 px-3 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md"
             >
-              Enquiry
-            </a>
+              Contact Us
+            </Link>
           </div>
 
           <div className="flex items-center md:hidden">
@@ -78,6 +76,7 @@ export default function Navbar() {
               <Link
                 key={item.value}
                 href={`/${item.value.toLowerCase()}`}
+                onClick={() => setIsMobileMenuOpen(false)}
                 className={`block w-full text-left px-3 py-4 text-base font-medium ${
                   pathname === `/${item.value.toLowerCase()}` ||
                   (item.value === "/" && pathname === "/")
@@ -89,12 +88,11 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdEBcWD_ND-qBd0a9uTJZLJaeV3STIGjP6PpJmBAH3MZbIAzA/viewform"
-              target="_blank"
-              rel="noreferrer"
+              href="/contact-us"
+              onClick={() => setIsMobileMenuOpen(false)}
               className="w-full mt-4 bg-brand-brown text-brand-gold px-3 py-4 font-bold uppercase tracking-wide"
             >
-              Enquiry
+              Contact Us
             </Link>
           </div>
         </div>

@@ -16,6 +16,7 @@ import {
   Quote,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutUs() {
   return (
@@ -26,14 +27,14 @@ export default function AboutUs() {
             src="/VVbackground.svg"
             alt="Vedic Background"
             className="w-full h-full object-cover opacity-[0.15]"
-            width={'100'}
-            height={'100'}
+            width={"100"}
+            height={"100"}
           />
 
           {/* Overlay Gradient */}
           <div className="absolute inset-0 bg-gradient-to-br " />
         </div>
-        
+
         {/* Decorative Blur */}
         <div className="absolute top-10 left-10 w-72 h-72 bg-brand-yellow/10 rounded-full blur-3xl opacity-50" />
         <div className="absolute bottom-10 right-10 w-72 h-72 bg-brand-green/10 rounded-full blur-3xl opacity-40" />
@@ -49,47 +50,53 @@ export default function AboutUs() {
 
               {/* Description */}
               <p className="text-lg md:text-xl text-brand-green/70 leading-relaxed mb-10 max-w-3xl">
-                At Vedic Visionaries, we combine the timeless wisdom of Vedic Astrology, Vastu Shastra, and Numerology with practical modern insights. 
-              <br />
-              <br />
-                With over 10 years of experience and clients across India, the UK, and the UAE, we provide personalized guidance to help individuals and families achieve clarity, harmony, prosperity, and spiritual balance
+                At Vedic Visionaries, we combine the timeless wisdom of Vedic
+                Astrology, Vastu Shastra, and Numerology with practical modern
+                insights.
+                <br />
+                <br />
+                With over 10 years of experience and clients across India, the
+                UK, and the UAE, we provide personalized guidance to help
+                individuals and families achieve clarity, harmony, prosperity,
+                and spiritual balance
               </p>
 
               {/* Highlights */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 lg:gap-4">
                 {/* Card 1 */}
-                <div className="group flex items-center gap-4 bg-white/80 backdrop-blur-sm border border-brand-gold/10 rounded-2xl px-6 py-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="w-14 h-14 rounded-2xl bg-brand-yellow/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/10 transition-all duration-300">
-                    <Award className="w-6 h-6 text-brand-gold" />
+                <div className="group flex items-center gap-3 bg-white/80 backdrop-blur-sm border border-brand-gold/10 rounded-xl px-4 lg:px-5 py-3 lg:py-4 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div className="w-11 h-11 lg:w-12 lg:h-12 rounded-xl bg-brand-yellow/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/10 transition-all duration-300">
+                    <Award className="w-5 h-5 text-brand-gold" />
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-xl font-bold text-brand-green">
+                    <h3 className="font-serif text-base lg:text-lg font-bold text-brand-green leading-snug">
                       Certified Vedic Astrologer
                     </h3>
                   </div>
                 </div>
 
                 {/* Card 2 */}
-                <div className="group flex items-center gap-4 bg-white/80 backdrop-blur-sm border border-brand-gold/10 rounded-2xl px-6 py-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="w-14 h-14 rounded-2xl bg-brand-yellow/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/10 transition-all duration-300">
-                    <Sparkles className="w-6 h-6 text-brand-gold" />
+                <div className="group flex items-center gap-3 bg-white/80 backdrop-blur-sm border border-brand-gold/10 rounded-xl px-4 lg:px-5 py-3 lg:py-4 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div className="w-11 h-11 lg:w-12 lg:h-12 rounded-xl bg-brand-yellow/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/10 transition-all duration-300">
+                    <Sparkles className="w-5 h-5 text-brand-gold" />
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-xl font-bold text-brand-green">
+                    <h3 className="font-serif text-base lg:text-lg font-bold text-brand-green leading-snug">
                       Vastu Shastra Consultant
                     </h3>
                   </div>
                 </div>
 
-                <div className="group flex items-center gap-4 bg-white/80 backdrop-blur-sm border border-brand-gold/10 rounded-2xl px-6 py-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="w-14 h-14 rounded-2xl bg-brand-yellow/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/10 transition-all duration-300">
-                    <Sparkles className="w-6 h-6 text-brand-gold" />
+                {/* Card 3 */}
+                <div className="group flex items-center gap-3 bg-white/80 backdrop-blur-sm border border-brand-gold/10 rounded-xl px-4 lg:px-5 py-3 lg:py-4 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                  <div className="w-11 h-11 lg:w-12 lg:h-12 rounded-xl bg-brand-yellow/10 border border-brand-gold/20 flex items-center justify-center group-hover:bg-brand-gold/10 transition-all duration-300">
+                    <Sparkles className="w-5 h-5 text-brand-gold" />
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-xl font-bold text-brand-green">
+                    <h3 className="font-serif text-base lg:text-lg font-bold text-brand-green leading-snug">
                       Professional Numerologist
                     </h3>
                   </div>
@@ -144,7 +151,13 @@ export default function AboutUs() {
                 </div> */}
 
                 <p className="text-brand-green/70 leading-relaxed text-lg">
-                  At Vedic Visionaries, is to guide individuals and families toward clarity, harmony, and fulfillment through the timeless wisdom of Astrology, Vastu Shastra, and Numerology. We believe every journey has a purpose, and through personalized guidance, practical remedies, and authentic Vedic knowledge, we help our clients make informed decisions and create a balanced, prosperous life.
+                  At Vedic Visionaries, is to guide individuals and families
+                  toward clarity, harmony, and fulfillment through the timeless
+                  wisdom of Astrology, Vastu Shastra, and Numerology. We believe
+                  every journey has a purpose, and through personalized
+                  guidance, practical remedies, and authentic Vedic knowledge,
+                  we help our clients make informed decisions and create a
+                  balanced, prosperous life.
                 </p>
 
                 {/* <p className="text-brand-green/70 leading-relaxed text-lg mt-5">
@@ -170,28 +183,34 @@ export default function AboutUs() {
                   </div>
 
                   <p className="text-lg md:text-xl italic leading-relaxed text-brand-white/90">
-                    “To help people unlock their true potential through the wisdom of Astrology, Vastu Shastra, and Numerology, offering personalized guidance that brings clarity, confidence, harmony, and prosperity to life&apos;s journey.”
+                    “To help people unlock their true potential through the
+                    wisdom of Astrology, Vastu Shastra, and Numerology, offering
+                    personalized guidance that brings clarity, confidence,
+                    harmony, and prosperity to life&apos;s journey.”
                   </p>
                 </div>
               </div>
 
               {/* CTA */}
               <div className="mt-10">
-                <button
-                  className="
+                <Link
+            href="https://wa.me/919769964070?text=Hello%20Vedic%20Visionaries,%20I%20want%20to%20book%20a%20consultation"
+            target="_blank"
+            className="
               inline-flex items-center gap-3
               bg-brand-gold hover:bg-brand-yellow
               text-brand-white
-              px-8 py-4 rounded-2xl
-              font-semibold tracking-wide
+              px-8 py-4
+              rounded-2xl
+              font-semibold
               transition-all duration-300
               hover:scale-[1.02]
               shadow-lg
             "
-                >
-                  Book Now
-                  <ArrowRight className="w-5 h-5" />
-                </button>
+          >
+            Book Consultation
+            <ArrowRight className="w-5 h-5" />
+          </Link>
               </div>
             </div>
           </div>
@@ -234,8 +253,8 @@ export default function AboutUs() {
               </h3>
 
               <p className="text-brand-green/70 leading-relaxed text-lg">
-                The Vedic Visionaries blends traditional Vedic principles with a modern
-                understanding of life, careers, relationships, and human
+                The Vedic Visionaries blends traditional Vedic principles with a
+                modern understanding of life, careers, relationships, and human
                 psychology.
               </p>
             </div>
@@ -481,8 +500,9 @@ export default function AboutUs() {
             </h2>
 
             <p className="text-xl md:text-2xl text-brand-green/70 leading-relaxed max-w-4xl mx-auto">
-              The Vedic Visionaries believes astrology is not destiny — it’s a roadmap. The
-              planets show tendencies, but your choices shape your life.
+              The Vedic Visionaries believes astrology is not destiny — it’s a
+              roadmap. The planets show tendencies, but your choices shape your
+              life.
             </p>
 
             {/* Values */}
