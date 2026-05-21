@@ -133,7 +133,7 @@ export default function AboutUs() {
             {/* Right Side - Content */}
             <div className="flex flex-col justify-center items-center">
               {/* Main Heading */}
-              <h2 className="font-serif text-4xl md:text-6xl font-bold text-brand-green leading-tight mb-8">
+              <h2 className="text-center font-serif text-4xl md:text-6xl font-bold text-brand-green leading-tight mb-8">
                 Guiding Lives Through{" "}
                 <span className="text-brand-gold">Vedic Wisdom</span>
               </h2>

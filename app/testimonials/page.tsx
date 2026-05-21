@@ -110,7 +110,7 @@ export default function Testimonials() {
             <div className="w-24 h-[2px] bg-brand-gold/60 mx-auto rounded-full mb-8" />
 
             <p className="text-lg md:text-xl text-brand-green/70 leading-relaxed">
-              Every reading by Astrologer Ankur Tripathi is focused on bringing
+              Every reading by The Vedic Visionaries is focused on bringing
               clarity, alignment, and peace. These testimonials reflect the
               trust people have built over the past 10+ years.
             </p>
